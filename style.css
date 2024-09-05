@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+  border: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: var(--fontColor);
+  background-color: var(--colorBlack);
+}
+:root {
+  --colorRed: #e50914;
+  --colorBlack: #131313;
+  --fontColor: #fff;
+  --hover: #c11119;
+}
+
+main {
+  width: 100%;
+  height: calc(100% - 20px);
+  background-image: url(Assests/bg.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.glow {
+  width: 100%;
+  height: 2px;
+  background: gray;
+}
+
+main nav {
+  position: absolute;
+  top: 0;
+  height: 10vh;
+  width: 80%;
+  margin: auto;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main nav > img {
+  height: 3rem;
+}
+main nav > button {
+  background: var(--colorRed);
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--fontColor);
+  border: 2px solid var(--colorRed);
+  border-radius: 5px;
+}
+main nav > button:hover {
+  background-color: var(--hover);
+  border: 2px solid var(--hover);
+}
+
+main .hero {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .hero > h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 4rem;
+}
+main .hero > h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+main .hero > p , .four p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+main .hero > .search , .four .contact{
+  width: 70%;
+  height: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+main .hero > .search input, .four .contact input {
+  width: 70vw;
+  border: 1px solid white;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+main .hero > .search input::placeholder, .four .contact input::placeholder {
+  color: gray;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1em;
+}
+main .hero > .search button, .four .contact button {
+  width: 30vw;
+  color: var(--fontColor);
+  background: var(--colorRed);
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: 1px solid var(--colorRed);
+  border-radius: 4px;
+}
+main .hero > .search button:hover, .four .contact button:hover{
+  background-color: var(--hover);
+  border: 2px solid var(--hover);
+}
+.first {
+  height: calc(100vh - 100px);
+  width: 100%;
+  padding: 5em;
+ 
+}
+.first > h2 {
+  font-size: 2em;
+}
+.first .check {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2em;
+}
+.first .check > select {
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1.1em;
+  background: rgba(0, 0, 0, 0.404);
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5em;
+}
+
+.swiper-container {
+  display: flex;
+  margin-top: 3rem;
+  width: 100%;
+  height: 20em;
+  position: relative;
+  overflow: hidden;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+
+}
+.swiper-slide img {
+  height: 100%;
+  border-radius: 8px;
+}
+.swiper-container.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  z-index: 10;
+}
+.swiper-button-next {
+  right: 10px;
+}
+
+
+/* section 2 */
+.second{
+  height: calc(100% - 100px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:flex-start;
+  padding: 4em;
+}
+.second >h2{
+  font-size: 2em;
+
+}
+.second .cards{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3em;
+}
+.second .cards .card{
+  width: 25%;
+  height: 80%;
+  background: linear-gradient(135deg, #192145, #20111E);
+  border-radius: 1em;
+  padding:1em;
+  position: relative;
+}
+.second .cards .card>h2{
+  font-size: 1.8em;
+  margin:1em 2px;
+
+}
+
+.second .cards .card>p{
+  color:#A1A1AB;
+  font-size: 18px;
+}
+.second .cards .card>img{
+position: absolute;
+height: 7em;
+right: 1em;
+bottom: 1em;
+}
+/* section 3 */
+.third{
+ width: 100%;
+ height: 100vh;
+ padding: 7em;
+  display: flex;
+  flex-direction: column;
+}
+
+.third h1{
+  color: white;
+ display: flex;
+ justify-content: flex-start;
+ margin:1rem 8rem;
+ font-size: 2rem;
+}
+
+.faq-box{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.third .faq-box .faq{
+  width: 80%;
+  height: 6em;
+  background-color: #2d2d2d;
+  margin: 5px;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  transition: .3s all ease-in-out;
+}
+
+.third .faq-box .faq h2{
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.third .faq i{
+  font-size: 2rem;
+  font-weight: 300;
+}
+.third .faq:hover{
+background-color: #414141;
+}
+
+/* section 4 */
+.four{
+  width: 80%;
+  height: 50vh;
+  margin:1em 8em ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer */
+footer{
+  width: 100%;
+  height: 60vh;
+  padding: 1em 7em;
+ 
+}
+footer h3{
+  color: #A1A1AB;
+  margin: 1em;
+}
+footer .ops-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em;
+
+}
+footer .ops-box .ops{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+footer .ops-box .ops a{
+  color: #A1A1AB;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+footer select{
+  width: 6em;
+  height: 2em;
+  border: 1px solid white;
+  border-radius: 2px;
+  background:transparent;
+  color: white;
+  font-size: 1rem;
+  margin: 1em;
+
+
+}
